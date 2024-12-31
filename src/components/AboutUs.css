@@ -1,0 +1,110 @@
+/* Container for the About Us page */
+.about-us-container {
+    padding: 3rem 5%;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin-top: 60px; /* Adjust this to account for fixed header height */
+}
+
+/* Section titles */
+.section-title,
+.section-subtitle {
+    color: #e64a19;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Intro Section Styling */
+.intro-section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Mission Section Styling */
+.mission-section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-text {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Team Section Styling */
+.team-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background-color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Lift effect */
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}

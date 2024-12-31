@@ -1,0 +1,88 @@
+footer {
+  background: linear-gradient(135deg, #f0e4d7, #f9e3d1); /* Softer gradient background */
+  padding: 40px 0;
+  font-size: 15px; /* Slightly larger font size for readability */
+  color: #333; /* Dark text color for better contrast */
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-copyright {
+  text-align: left;
+  color: #333; /* Adjusted text color */
+  margin-bottom: 15px;
+  font-size: 16px; /* Larger font size for copyright text */
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333; /* Dark text color for links */
+  margin-right: 30px;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #e64a19; /* Accent color on hover */
+  transform: scale(1.1); /* Subtle zoom effect */
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social a {
+  margin-right: 15px;
+  color: #333; /* Dark color for social icons */
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #e64a19; /* Accent color on hover */
+  transform: scale(1.2); /* Slightly larger on hover */
+}
+
+.footer-disclaimer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 10px; /* Increased font size for better readability */
+  font-style: italic;
+  color: #888; /* Light gray text for disclaimer */
+  max-width: 800px;
+  margin: 20px auto;
+  border: 2px solid #333; /* Added border with color */
+  border-radius: 8px; /* Optional: rounded corners for a softer look */
+  padding: 20px 30px; /* Adjusted padding to ensure text doesn't touch the border */
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+  }
+
+  .footer-copyright {
+    margin-bottom: 20px;
+  }
+}

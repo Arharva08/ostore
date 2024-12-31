@@ -1,0 +1,139 @@
+/* Centered Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+  color: wheat;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Main Header Container */
+.main-header {
+  display: flex;
+  flex-direction: column; /* Stack the logo, navigation, and user actions vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+/* Centered Logo */
+.logo {
+  font-size: 3rem; /* Slightly larger logo for better visibility */
+  font-weight: bold;
+  color: brown;
+  letter-spacing: 10px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-bottom: 20px; /* Add space below logo */
+}
+
+/* Add a line after the logo */
+.logo-line {
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px; /* Space below the line */
+}
+
+/* Navigation Menu Centering */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; /* Space between navigation and user actions */
+}
+
+/* Navigation Links */
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: brown;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* User Actions (Search, Login, Cart) */
+.user-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 1.2rem;
+  color: gray;
+  justify-content: center; /* Center the user actions */
+  margin-top: 10px; /* Space between nav menu and user actions */
+}
+
+/* Icons */
+.user-actions i {
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+  font-size: 1.4rem;
+  color: #333; /* Make sure the icons are visible */
+}
+
+.user-actions i:hover {
+  color: brown;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  width: 180px;
+}
+
+.dropdown-content a {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Arrow */
+.dropdown a::after {
+  content: ' ▼';
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
