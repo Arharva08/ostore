@@ -1,13 +1,12 @@
 // src/pages/AboutUs.js
 import React from 'react';
-import AboutUs from '../components/AboutUs';
+//import Login from '../components/Login';
 import Header from '../components/Header';
 
-const Aboutus = () => (
+const Login = () => (
   <div>
     <Header/>
-    <AboutUs/>
+    <Login/>
   </div>
 );
-export default Aboutus;
-  
+export default Login;
