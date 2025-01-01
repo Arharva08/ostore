@@ -43,7 +43,7 @@ const ProductsSection = () => {
     {
       discount: '8%',
       image: fitnessProductImage,  // Use the imported image variable
-      name: 'Cureveda Pro Plant Protein',
+      name: 'Cureveda Pro Plant Protein 1',
       description: '100% Vegan Protein Isolate',
       price: 1467,
       originalPrice: 1595,
@@ -51,7 +51,7 @@ const ProductsSection = () => {
     {
       discount: '8%',
       image: fitnessProductImage,  // Use the imported image variable
-      name: 'Cureveda Pro Plant Protein',
+      name: 'Cureveda Pro Plant Protein 2',
       description: '100% Vegan Protein Isolate',
       price: 1467,
       originalPrice: 1595,
@@ -59,7 +59,7 @@ const ProductsSection = () => {
     {
       discount: '8%',
       image: fitnessProductImage,  // Use the imported image variable
-      name: 'Cureveda Pro Plant Protein',
+      name: 'Cureveda Pro Plant Protein 3',
       description: '100% Vegan Protein Isolate',
       price: 1467,
       originalPrice: 1595,
@@ -67,7 +67,7 @@ const ProductsSection = () => {
     {
       discount: '8%',
       image: fitnessProductImage,  // Use the imported image variable
-      name: 'Cureveda Pro Plant Protein',
+      name: 'Cureveda Pro Plant Protein 4',
       description: '100% Vegan Protein Isolate',
       price: 1467,
       originalPrice: 1595,
@@ -75,7 +75,7 @@ const ProductsSection = () => {
     {
       discount: '8%',
       image: fitnessProductImage,  // Use the imported image variable
-      name: 'Cureveda Pro Plant Protein',
+      name: 'Cureveda Pro Plant Protein 5',
       description: '100% Vegan Protein Isolate',
       price: 1467,
       originalPrice: 1595,
@@ -83,7 +83,7 @@ const ProductsSection = () => {
     {
       discount: '8%',
       image: fitnessProductImage,  // Use the imported image variable
-      name: 'Cureveda Pro Plant Protein',
+      name: 'Cureveda Pro Plant Protein 6',
       description: '100% Vegan Protein Isolate',
       price: 1467,
       originalPrice: 1595,

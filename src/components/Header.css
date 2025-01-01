@@ -35,7 +35,7 @@
 
 /* Add a line after the logo */
 .logo-line {
-  width: 100%;
+  width: 80%;
   border-bottom: 2px solid #ddd;
   margin-bottom: 20px; /* Space below the line */
 }
@@ -133,7 +133,7 @@
 
 /* Dropdown Arrow */
 .dropdown a::after {
-  content: ' ▼';
+  content: '▼';
   font-size: 0.8rem;
   margin-left: 5px;
 }

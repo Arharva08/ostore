@@ -1,0 +1,148 @@
+/* Container Styling */
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.product-image img {
+  width:100px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details */
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin: 15px 0;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.product-ingredients,
+.product-usage {
+  font-size: 16px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.product-ingredients span,
+.product-usage span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Product Price */
+.product-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.product-price span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e88e5;
+}
+
+.product-price .original-price {
+  font-size: 18px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+/* Action Buttons */
+.product-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.buy-now,
+.add-to-cart {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buy-now {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.add-to-cart {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.buy-now:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.add-to-cart:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .product-details {
+    text-align: center;
+    flex: 1;
+  }
+
+  .product-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
