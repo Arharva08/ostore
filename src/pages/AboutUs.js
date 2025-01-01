@@ -5,9 +5,7 @@ import Header from '../components/Header';
 
 const Aboutus = () => (
   <div>
-    <Header/>
     <AboutUs/>
   </div>
 );
 export default Aboutus;
-  
