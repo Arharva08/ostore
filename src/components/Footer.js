@@ -42,7 +42,31 @@ const Footer = () => (
         person. No individual result should be seen as typical.
       </p>
     </div>
+    <div className="footer-new-section">
+  <div className="customer-support">
+    <h4>Customer Support</h4>
+    <p>Email: support@climichealth.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+    <p>Working Hours: Mon-Fri, 9 AM - 6 PM</p>
+  </div>
+  <div className="newsletter-signup">
+    <h4>Newsletter Signup</h4>
+    <p>Stay updated with our latest news and offers.</p>
+    <form>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="newsletter-input"
+      />
+      <button type="submit" className="newsletter-button">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+
   </footer>
+  
 );
 
-export default Footer;
+export default Footer;
