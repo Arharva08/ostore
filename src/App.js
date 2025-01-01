@@ -9,6 +9,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import CartPage from './pages/CartPage';
 import ProPlantProtein from './components/ProPlantProtein';
+import Login from './pages/Login';
 
 const App = () => (
   <Router>
@@ -19,6 +20,7 @@ const App = () => (
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/products/:productName" element={<ProPlantProtein />} />
       {/* Dynamic route for all products */}
     </Routes>

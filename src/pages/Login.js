@@ -1,12 +1,11 @@
-// src/pages/AboutUs.js
 import React from 'react';
-//import Login from '../components/Login';
+import LoginComponent from '../components/LoginComponent'; // Rename the imported Login to LoginComponent
 import Header from '../components/Header';
 
-const Login = () => (
+const AboutUs = () => (
   <div>
-    <Header/>
-    <Login/>
+    <LoginComponent /> {/* Use the renamed LoginComponent */}
   </div>
 );
-export default Login;
+
+export default AboutUs;
