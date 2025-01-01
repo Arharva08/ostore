@@ -12,7 +12,7 @@ const AboutUs = () => (
       </p>
     </div>
 
-    {/* Mission Section */}
+    {/* Mission Section */} 
     <div className="mission-section">
       <h2 className="section-title">Our Mission</h2>
       <p className="mission-text">

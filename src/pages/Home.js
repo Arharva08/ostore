@@ -6,7 +6,6 @@ import ProductsSection from '../components/ProductsSection';
 const Home = () => {
   return (
     <div>
-      <Header/>
       <HeroSection/>
       <ProductsSection />
     </div>
