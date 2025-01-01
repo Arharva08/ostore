@@ -20,6 +20,7 @@
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
+  
 }
 
 /* Centered Logo */
@@ -72,8 +73,17 @@
   font-size: 1.2rem;
   color: gray;
   justify-content: center; /* Center the user actions */
-  margin-top: 10px; /* Space between nav menu and user actions */
+  margin-top:-35px; /* Space between nav menu and user actions */
+  margin-left: 800px;
 }
+.user-actions img.action-icon {
+  width: 30px;  /* Set the size of your icons */
+  height: 30px;
+  margin-left: 30;  /* Space between the icons */
+  cursor: pointer;  /* Makes them clickable */
+
+}
+
 
 /* Icons */
 .user-actions i {
@@ -81,6 +91,7 @@
   transition: color 0.3s, transform 0.3s;
   font-size: 1.4rem;
   color: #333; /* Make sure the icons are visible */
+  
 }
 
 .user-actions i:hover {

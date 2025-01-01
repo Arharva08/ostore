@@ -1,5 +1,5 @@
 footer {
-  background: linear-gradient(135deg, #f0e4d7, #f9e3d1); /* Softer gradient background */
+  background-color: #bfa194d5; /* Softer gradient background */
   padding: 40px 0;
   font-size: 15px; /* Slightly larger font size for readability */
   color: #333; /* Dark text color for better contrast */
@@ -21,6 +21,48 @@ footer {
   color: #333; /* Adjusted text color */
   margin-bottom: 15px;
   font-size: 16px; /* Larger font size for copyright text */
+}
+.footer-new-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #e0cec5; /* Light background for contrast */
+  padding: 20px;
+  margin-top: 20px; /* Space above the new section */
+  margin-bottom: -40px;
+  color: #333;
+}
+
+.customer-support, .newsletter-signup {
+  flex: 1 1 300px; /* Responsive layout for smaller screens */
+  margin: 10px;
+}
+
+.customer-support h4, .newsletter-signup h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.newsletter-input {
+  width: 80%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter-button {
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  background-color: #555;
 }
 
 .footer-links {
@@ -63,7 +105,7 @@ footer {
   padding: 20px 0;
   font-size: 10px; /* Increased font size for better readability */
   font-style: italic;
-  color: #888; /* Light gray text for disclaimer */
+  color: #030202; /* Light gray text for disclaimer */
   max-width: 800px;
   margin: 20px auto;
   border: 2px solid #333; /* Added border with color */
