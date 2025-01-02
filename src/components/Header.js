@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { useState } from 'react';
 
 const Header = () => (
   <header>
@@ -43,40 +44,44 @@ const Header = () => (
 </Link>
 </div>
 
-      <div className="logo-line"></div> {/* Line beneath the logo */}
+  <div className="logo-line"></div> {/* Line beneath the logo */}
       <nav className="nav-menu">
+      <div className="dropdown">
+      <Link to="/" className="dropdown-toggle">OSTORE </Link> {/* Icon added here */}
+    <div className="dropdown-content">
+      <Link to="/about-us">Our Story</Link> {/* No icon here */}
+    </div>
+  </div>
+  <div className="dropdown">
+      <Link to="/" className="dropdown-toggle">Shop </Link> {/* Icon added here */}
+    <div className="dropdown-content">
+      <Link to="/products">Our products</Link> {/* No icon here */}
+    </div>
+  </div> 
+
+        
         <div className="dropdown">
-          <Link to="/">OSTORE</Link>
-          <div className="dropdown-content">
-            <Link to="/about-us">Our Story</Link>
-          </div>
-        </div>
-        <div className="dropdown">
-          <Link to="/products">SHOP</Link>
-          <div className="dropdown-content">
-            <Link to="/products">All Products</Link>
-          </div>
-        </div>
-        <div className="dropdown">
-          <Link to="/category">CATEGORY</Link>
+          <Link to="/" className="dropdown-toggle">Category</Link>
           <div className="dropdown-content">
             <Link to="/category/skincare">Skincare</Link>
           </div>
         </div>
+
         <div className="dropdown">
-          <Link to="/health-combos">COMBOS</Link>
+          <Link to="/" className='dropdown-toggle'>Combos</Link>
           <div className="dropdown-content">
             <Link to="/combos/immunity">Immunity</Link>
           </div>
         </div>
         <div className="dropdown">
-          <Link to="/offer">OFFER</Link>
+          <Link to="/" className='dropdown-toggle'>Offers</Link>
           <div className="dropdown-content">
             <Link to="/offer/deals">Deals</Link>
           </div>
         </div>
       </nav>
     </div>
+    
   </header>
 );
 

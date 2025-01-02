@@ -1,39 +1,99 @@
+/* Main container styling */
 .otp-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  height: 75vh;
+  background: linear-gradient(60deg, #6e6a6a, #aa8f79);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Card styling */
+.otp-card {
+  background: #e7dbda;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
   max-width: 400px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
-input {
-  padding: 8px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
+/* Title styling */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
+/* Error message styling */
 .error-message {
-  color: red;
+  color: #743536;
+  margin-bottom: 20px;
   font-size: 14px;
+  font-weight: bold;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
   margin-bottom: 10px;
+}
+
+.input-field:focus {
+  border-color: #8d4f40;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+/* Button styling */
+.primary-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #41332f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.primary-button:hover {
+  background: #613d23c4;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .otp-card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .primary-button {
+    font-size: 14px;
+  }
 }

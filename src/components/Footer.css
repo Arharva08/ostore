@@ -1,7 +1,7 @@
 footer {
-  background-color: #bfa194d5; /* Softer gradient background */
+  background-color: #e2cfc6; /* Softer gradient background */
   padding: 40px 0;
-  font-size: 15px; /* Slightly larger font size for readability */
+  font-size: 17px; /* Slightly larger font size for readability */
   color: #333; /* Dark text color for better contrast */
   box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
   font-family: 'Poppins', sans-serif; /* Modern and clean font */
@@ -12,35 +12,35 @@ footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .footer-copyright {
   text-align: left;
   color: #333; /* Adjusted text color */
-  margin-bottom: 15px;
-  font-size: 16px; /* Larger font size for copyright text */
+  margin-bottom: -20px;
+  font-size: 18px; /* Larger font size for copyright text */
 }
 .footer-new-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #e0cec5; /* Light background for contrast */
-  padding: 20px;
-  margin-top: 20px; /* Space above the new section */
-  margin-bottom: -40px;
+  background-color: #c3a99ed5; /* Light background for contrast */
+  padding: 20px 150px;
+  margin-top: -40px; /* Space above the new section */
+  margin-bottom: -20px;
   color: #333;
 }
 
 .customer-support, .newsletter-signup {
   flex: 1 1 300px; /* Responsive layout for smaller screens */
-  margin: 10px;
+  margin: 20px;
 }
 
 .customer-support h4, .newsletter-signup h4 {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -50,10 +50,12 @@ footer {
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .newsletter-button {
-  padding: 8px 15px;
+  width: 80%;
+  padding: 8px 10px;
   background-color: #333;
   color: #fff;
   border: none;
@@ -62,7 +64,7 @@ footer {
 }
 
 .newsletter-button:hover {
-  background-color: #555;
+  background-color: #463838;
 }
 
 .footer-links {
@@ -79,7 +81,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #e64a19; /* Accent color on hover */
+  color: #4f1202; /* Accent color on hover */
   transform: scale(1.1); /* Subtle zoom effect */
 }
 
@@ -96,18 +98,17 @@ footer {
 }
 
 .footer-social a:hover {
-  color: #e64a19; /* Accent color on hover */
+  color: #4f1202; /* Accent color on hover */
   transform: scale(1.2); /* Slightly larger on hover */
 }
 
 .footer-disclaimer {
   text-align: center;
-  padding: 20px 0;
   font-size: 10px; /* Increased font size for better readability */
   font-style: italic;
   color: #030202; /* Light gray text for disclaimer */
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 1300px;
+  margin: -10px auto;
   border: 2px solid #333; /* Added border with color */
   border-radius: 8px; /* Optional: rounded corners for a softer look */
   padding: 20px 30px; /* Adjusted padding to ensure text doesn't touch the border */
@@ -121,10 +122,10 @@ footer {
   }
 
   .footer-links {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .footer-copyright {
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }

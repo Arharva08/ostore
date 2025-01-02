@@ -145,7 +145,7 @@
 
 /* Dropdown Arrow */
 .dropdown a::after {
-  content: ' ▼';
+  content: ' ';
   font-size: 0.8rem;
   margin-left: 5px;
 }

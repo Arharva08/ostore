@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginComponent.css'; // Make sure to create this CSS file to style the component.
+import './LoginComponent.css';
 
 const Login = () => {
   const [phone, setPhone] = useState('');
@@ -37,34 +37,38 @@ const Login = () => {
 
   return (
     <div className="otp-container">
-      <h2>OTP Login</h2>
-      {error && <div className="error-message">{error}</div>}
+      <div className="otp-card">
+        <h2>OTP Login</h2>
+        {error && <div className="error-message">{error}</div>}
 
-      {step === 1 && (
-        <div>
-          <label>Enter Phone Number:</label>
-          <input
-            type="text"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="Enter your phone number"
-          />
-          <button onClick={sendOtp}>Send OTP</button>
-        </div>
-      )}
+        {step === 1 && (
+          <div className="form-group">
+            <label>Enter Phone Number:</label>
+            <input
+              type="text"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="Enter your phone number"
+              className="input-field"
+            />
+            <button onClick={sendOtp} className="primary-button">Send OTP</button>
+          </div>
+        )}
 
-      {step === 2 && (
-        <div>
-          <label>Enter OTP:</label>
-          <input
-            type="text"
-            value={otp}
-            onChange={(e) => setOtp(e.target.value)}
-            placeholder="Enter OTP"
-          />
-          <button onClick={verifyOtp}>Verify OTP</button>
-        </div>
-      )}
+        {step === 2 && (
+          <div className="form-group">
+            <label>Enter OTP:</label>
+            <input
+              type="text"
+              value={otp}
+              onChange={(e) => setOtp(e.target.value)}
+              placeholder="Enter OTP"
+              className="input-field"
+            />
+            <button onClick={verifyOtp} className="primary-button">Verify OTP</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
