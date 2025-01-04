@@ -6,7 +6,6 @@ import productImage2 from '../assets/productbanner.png'; // Add your image here
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0); // State to track the current image
   const images = [productImage, productImage2]; // Array of images
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Toggle images

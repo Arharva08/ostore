@@ -8,6 +8,7 @@
   font-size: 14px;
   font-weight: bold;
   width: 100%;
+  
 }
 
 /* Main Header Container */
@@ -20,6 +21,9 @@
   background-color: white;
   border-bottom: 1px solid #ddd;
   width: 100%;
+  
+  top: -10;
+  
   
 }
 
