@@ -13,3 +13,25 @@
   object-fit: cover; /* Ensures the image fills the space properly */
   transition: opacity 1s ease-in-out; /* Smooth transition effect */
 }
+
+.hero-indicators {
+  position: absolute; /* Position relative to .hero-section */
+  bottom: -10px; /* Distance from the bottom of the Hero Section */
+  left: 50%; /* Horizontally align center */
+  transform: translateX(-50%); /* Adjust alignment to the center */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(221, 218, 218);
+  transition: color 0.3s ease;
+}
+
+.indicator.active {
+  color: rgb(73, 71, 71);
+  font-weight: bold;
+}
