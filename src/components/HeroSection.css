@@ -1,10 +1,11 @@
 .hero-section {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   height: 500px; /* Adjust height as needed */
   background-color: #f8f9fa;
   overflow: hidden;
+  
 }
 
 .hero-images img {

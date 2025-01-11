@@ -10,7 +10,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Toggle images
-    }, 5000); // Change every 5 seconds
+    }, 4000); // Change every 4 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
